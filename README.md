@@ -49,7 +49,7 @@ flight-monitoring-device-2025/
    cd raspberry-pi
    python3 -m venv env
    source env/bin/activate
-   pip install adafruit-circuitpython-mpu6050 adafruit-circuitpython-mpl3115a2 adafruit-gps
+   pip install adafruit-circuitpython-mpu6050 adafruit-circuitpython-mpl3115a2 adafruit-circuitpython-gps
    ```
 
 2. Connect hardware:
@@ -84,9 +84,9 @@ flight-monitoring-device-2025/
 ## Flight Sequence
 
 1. Armed - System ready
-2. Liftoff - Detected at 1000ft
-3. Air brakes deploy at 8000ft
-4. Apogee - Brakes retract
+2. Liftoff - Detected at 1000ft or high acceleration
+3. Air brakes open and close at 8000ft
+4. Apogee - Peak altitude detected
 5. Descent
 6. Landing
 
